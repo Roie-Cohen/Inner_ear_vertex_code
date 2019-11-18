@@ -1,0 +1,18 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018b (9.5.0.944444) 64-bit (glnxa64)
+                              August 28, 2018
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> >> >> Starting parallel pool (parpool) using the 'local' profile ...
+connected to 12 workers.
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 224 bytes for AllocateHeap
+# An error report file with more information is saved as:
+# /a/home/cc/students/physics/roiec/hs_error_pid25927.log
+Opening log file:  /a/home/cc/students/physics/roiec/java.log.25927
