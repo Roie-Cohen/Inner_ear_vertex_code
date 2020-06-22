@@ -2,6 +2,7 @@ function g = ReposeLatticeByPCs(g, g_prev)
 % repositions the lattice according to previous position of the PCs
 
 PCs = find(g.populations == 4);
+if isempty(PCs), return; end
 PCs_pos = cellCOM(g, PCs);
 current_pos = mean(PCs_pos,1);
 

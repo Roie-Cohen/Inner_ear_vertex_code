@@ -6,11 +6,11 @@ end
 ng  =g;
 nbcell = length(ng.cells)-1;
 cand = find(ng.dead==0);
-for ci=1:length(cand),
+for ci=1:length(cand)
     c = cand(ci);
-    if (cellarea(ng,c)<thresh*ng.areas(c)),
-        while (length(ng.cells{c+1})>3),
-            if(crit==1), %% sort by boundary length
+    if (cellarea(ng,c)<thresh*ng.areas(c))
+        while (length(ng.cells{c+1})>3)
+            if(crit==1) %% sort by boundary length
                 vidx=g.bonds(ng.cells{c+1},1);
                 vert = getRelativePosition(ng,vidx,c);
                 nb=length(vidx);
@@ -38,8 +38,5 @@ for ci=1:length(cand),
         end
         ng = T2transition(ng,c);
         nkilled = nkilled+1;
-        if isfield(g,'populations') && g.populations(1)~=0
-            g = redistributeAreas(g);
-        end
     end
 end

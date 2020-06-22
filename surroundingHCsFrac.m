@@ -1,5 +1,5 @@
 function frac = surroundingHCsFrac(g,i)
-if ~g.dead(i) && isfield(g, 'populations')
+if ~g.dead(i)
     perim=0;
     HCs_l = 0;
     vidx=g.bonds(g.cells{i+1},1);

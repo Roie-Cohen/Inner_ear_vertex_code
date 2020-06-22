@@ -9,8 +9,6 @@ if isfield(g, 'populations')
         g.cmpr(i) = g.alpha(g.populations(i));
         g.ctrc(i) = g.Gamma(g.populations(i));
     end
-    % temp 24/10/19
-    g.ctrc(g.ablated_cell) = 20;
     
     % update the bond tension for each bond
     for i=1:length(g.bonds(:,1))
