@@ -21,3 +21,5 @@ The first number represents the cellular lattice index and the second number rep
 
 To plot the lattice at a certain timepoint, load the desired time point ("lat(#)_step(#).mat" file) and use "LatticePresentation(g,0)".
 For presentation of the lattice including cells numbers use "LatticePresentation(g,1)".
+
+To make movies of the simulations use the file "make_simulation_movies.m"
